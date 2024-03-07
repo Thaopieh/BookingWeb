@@ -18,41 +18,72 @@
         <section>
             <article>
                 <div class="hotel-list-page">
-                    <div class="searchBox-v8">
+                    <div class="searchBox">
                         <!-- search bar, Thảo, Thuận -->
-                        <ul class="ul">
-                            <li class="list-item list-destination">
-                                <div class="search-container">
-                                    <div class="search-Box" id="search-box-destination">
-                                        <label for="hotels-destination">Destination</label>
-                                        <div class="inputBarWidth">
-                                            <input type="text" name="" id="hotels-destination" class="show-hightlight" value="Ha Noi" autocomplete="on" placeholder="City, airport, region, landmark or property name">
-                                           <div id="input-length-cacl">Ha Noi</div>
+                        <div id="hotel_searchBox" class="list-search-container">
+                            <ul class="ul">
+                                <li class="list-item list-destination">
+                                    <div class="search-container">
+                                        <div class="search-Box" id="search-box-destination">
+                                            <label for="hotels-destination">Destination</label>
+                                            <div class="inputBarWidth">
+                                                <input type="text" name="" id="hotels-destination" class="show-hightlight" value="Ha Noi" autocomplete="on" placeholder="City, airport, region, landmark or property name">
+                                               <div id="input-length-cacl">Ha Noi</div>
+                                            </div>
+                                            <label for="hotels-destination" class="searchBarVersionBLabel" id="versionBValueLabel" ></label>
                                         </div>
-                                        <label for="hotels-destination" class="searchBarVersionBLabel" id="versionBValueLabel" ></label>
                                     </div>
-                                </div>
-                            </li>
-                            <li class="list-item list-calendar">
-                                <div class="calendar-container">
-                                    <div class="time-tab">
-                                        <label class="in" for="checkIn">Check-in</label>
-                                        <input type="text" id="checkIn" class="focus-input show-hightlight in-time" value="Thu, Mar 7" placeholder="Select date" readonly data-key="2024/03/07">
+                                </li>
+                                <li class="list-item list-calendar">
+                                    <div class="calendar-container">
+                                        <div class="time-tab">
+                                            <label class="in" for="checkIn">Check-in</label>
+                                            <input type="text" id="checkIn" class="focus-input show-hightlight in-time" value="Thu, Mar 7" placeholder="Select date" readonly data-key="2024/03/07">
+    
+                                        </div>
+                                        <div id="preload-nights" class="nights">
+                                            <span>1 night</span>
+                                        </div>
+                                        <div class="time-tab">
+                                            <label class="out" for="checkOut">Check-Out</label>
+                                            <input type="text" id="checkOut" class="focus-input show-hightlight out-time" value="Fri, Mar 8" placeholder="Select date" readonly data-key="2024/03/08">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-item list-roomguest">
+                                    <div class="room-guest-container">
+                                        <div class="room-guest">
+                                            <label for="">Rooms and Guests</label>
+                                            <p id="preload-room-guest" class="info show-hightlight">
+                                                <span>1 room</span>, 
+                                                <span>2 adults</span>, 
+                                                <span>0 children</span>
+                                            </p>
+                                            <i type="ic_new_dropdown_line" class="u-icon u-icon-ic_new_dropdown_line icon-arrow">
+                                            
+                                            </i>
+                                        </div>
+                                    </div>
+    
+                                </li>
+                                <li class="list-item list-btn">
+                                    <div class="list-btn-animation isAnimation"></div>
+                                    <button class="tripui-online-btn tripui-online-btn-large tripui-online-btn-solid-primary    search-button-new withAnimation" type="button">
+                                        <div class="tripui-online-btn-content">
+                                            <span class="tripui-online-btn-icon"></span>
+                                            <span class="tripui-online-btn-content-children">
+                                                <span class="searchbtn-txt">Search</span>
+                                            </span>
+                                        </div>
+    
+                                    </button>
+    
+    
+                                </li>
+                            </ul>
 
-                                    </div>
-                                    <div id="preload-nights" class="nights">
-                                        <span>1 night</span>
-                                    </div>
-                                    <div class="time-tab">
-                                        <label class="out" for="checkOut">Check-Out</label>
-                                        <input type="text" id="checkOut" class="focus-input show-hightlight out-time" value="Fri, Mar 8" placeholder="Select date" readonly data-key="2024/03/08">
-                                    </div>
-                                </div>
-
-                            </li>
-                            <li></li>
-                            <li></li>
-                        </ul>
+                        </div>
+                        
                     </div>
                 </div>
                 <!-- phần thân nội dung chính -->

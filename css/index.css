@@ -8,3 +8,39 @@ html, body {
 ul{
     list-style: none;
 }
+
+
+
+/* body  */
+.searchBox .list-search-container{
+    max-width: 1160px;
+    min-width: 750px;
+    margin: 0 auto;
+    background: #ffffff;
+    box-shadow: 0px 8px 20px 0px rgba(15,41,77,0.12);
+    box-sizing: border-box;
+    border-radius: 8px
+}
+
+.searchBox .list-search-container .ul {
+    margin: 0 auto;
+    list-style: none;
+    box-sizing: border-box
+}
+
+.searchBox .list-search-container .list-item {
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+    border-radius: 4px;
+    height: 56px
+}
+
+.searchBox .list-search-container .list-item .room-guest {
+    border-radius: 4px
+}
+
+.searchBox .list-search-container .list-destination,.searchBox-v8 .list-search-container .list-calendar,.searchBox-v8 .list-search-container .list-roomguest {
+    border: 1px solid #DADFE6 !important
+}
+
