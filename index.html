@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lasting</title>
+    <link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
 <!-- vô web inspect code lên cop layout -->
@@ -19,9 +20,36 @@
                 <div class="hotel-list-page">
                     <div class="searchBox-v8">
                         <!-- search bar, Thảo, Thuận -->
-                        <ul>
-                            <li></li>
-                            <li></li>
+                        <ul class="ul">
+                            <li class="list-item list-destination">
+                                <div class="search-container">
+                                    <div class="search-Box" id="search-box-destination">
+                                        <label for="hotels-destination">Destination</label>
+                                        <div class="inputBarWidth">
+                                            <input type="text" name="" id="hotels-destination" class="show-hightlight" value="Ha Noi" autocomplete="on" placeholder="City, airport, region, landmark or property name">
+                                           <div id="input-length-cacl">Ha Noi</div>
+                                        </div>
+                                        <label for="hotels-destination" class="searchBarVersionBLabel" id="versionBValueLabel" ></label>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-item list-calendar">
+                                <div class="calendar-container">
+                                    <div class="time-tab">
+                                        <label class="in" for="checkIn">Check-in</label>
+                                        <input type="text" id="checkIn" class="focus-input show-hightlight in-time" value="Thu, Mar 7" placeholder="Select date" readonly data-key="2024/03/07">
+
+                                    </div>
+                                    <div id="preload-nights" class="nights">
+                                        <span>1 night</span>
+                                    </div>
+                                    <div class="time-tab">
+                                        <label class="out" for="checkOut">Check-Out</label>
+                                        <input type="text" id="checkOut" class="focus-input show-hightlight out-time" value="Fri, Mar 8" placeholder="Select date" readonly data-key="2024/03/08">
+                                    </div>
+                                </div>
+
+                            </li>
                             <li></li>
                             <li></li>
                         </ul>
